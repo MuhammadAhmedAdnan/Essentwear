@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sock Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html?type=men">Men</a></li>
+            <li><a href="category.html?type=women">Women</a></li>
+            <li><a href="category.html?type=kids">Kids</a></li>
+            <li><a href="category.html?type=funky">Funky Socks</a></li>
+            <li><input type="text" id="search" placeholder="Search..."></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <video src="Whapp Video 2024-09-19 at 16.04.51.mp4" autoplay loop muted></video>
+        <div class="hero-overlay">
+            <h1>Welcome to the Best Sock Store</h1>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="category" onclick="window.location.href='category.html?type=men'">
+            <img src="men socks.png" alt="Men Socks">
+            <h3>Men Socks</h3>
+        </div>
+        <div class="category" onclick="window.location.href='category.html?type=women'">
+            <img src="women socks.png" alt="Women Socks">
+            <h3>Women Socks</h3>
+        </div>
+        <div class="category" onclick="window.location.href='category.html?type=kids'">
+            <img src="Screenshot 2024-09-19 164828.png" alt="Kids Socks">
+            <h3>Kids Socks</h3>
+        </div>
+        <div class="category" onclick="window.location.href='category.html?type=funky'">
+            <img src="images/funky-sock1.jpg" alt="Funky Socks">
+            <h3>Funky Socks</h3>
+        </div>
+        <div class="category" onclick="window.location.href='category.html?type=sports'">
+            <img src="images/sports-sock1.jpg" alt="Sports Socks">
+            <h3>Sports Socks</h3>
+        </div>
+        <div class="category" onclick="window.location.href='category.html?type=casual'">
+            <img src="images/casual-sock1.jpg" alt="Casual Socks">
+            <h3>Casual Socks</h3>
+        </div>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>

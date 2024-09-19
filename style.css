@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s;
+}
+
+body.scrolled {
+    background-color: #fff;
+    color: #000;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #111;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav ul li a, nav ul li input {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.category {
+    text-align: center;
+    cursor: pointer;
+    width: calc(33% - 20px);
+    margin: 10px;
+}
+
+.category img {
+    width: 450px;
+    height: 350px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    height: 400px; /* Adjusted for rectangular shape */
+}
+
+.product img {
+    width: 100%;
+    max-width: 200px;
+}
+
+.product-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.product-detail img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.cart {
+    margin: 20px;
+}
+
+.cart-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    color: #000;
+}
+
+.cart-item img {
+    width: 50px;
+    height: 50px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input[type="text"]:focus {
+    border-color: #333;
+}

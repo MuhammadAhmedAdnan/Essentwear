@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sock Store - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html?type=men">Men</a></li>
+            <li><a href="category.html?type=women">Women</a></li>
+            <li><a href="category.html?type=kids">Kids</a></li>
+            <li><input type="text" id="search" placeholder="Search..."></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="products-grid">
+        <div class="product-item" onclick="openModal('1')">
+            <img src="women socks.png" alt="Product 1">
+            <h3>Men's Black Socks</h3>
+            <p>$10.00</p>
+            <button>Add to Cart</button>
+        </div>
+        <!-- More product items as needed -->
+    </section>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImg" src="" alt="Product Image">
+            <h3 id="modalTitle"></h3>
+            <p id="modalPrice"></p>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

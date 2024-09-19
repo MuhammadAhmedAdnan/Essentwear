@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sock Store - Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="category.html?type=men">Men</a></li>
+            <li><a href="category.html?type=women">Women</a></li>
+            <li><a href="category.html?type=kids">Kids</a></li>
+            <li><a href="category.html?type=funky">Funky Socks</a></li>
+            <li><input type="text" id="search" placeholder="Search..."></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <section class="product-detail">
+        <img src="images/product1.jpg" alt="Product 1">
+        <h3>Men's Black Socks</h3>
+        <p>Price: $10.00</p>
+        <label for="color">Color: </label>
+        <select id="color">
+            <option value="black">Black</option>
+            <option value="gray">Gray</option>
+        </select>
+        <button onclick="addToCart(1)">Add to Cart</button>
+    </section>
+
+    <script src="cart.js"></script>
+</body>
+</html>
